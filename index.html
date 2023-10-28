@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./image/favicon.png">
+
+    <!-- font  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        .inter{
+            font-family: 'Inter', sans-serif;
+        }
+      </style>
+    <title>PH Tube</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex justify-between mt-10 px-2 md:px-16">
+            <img src="./image/logo.png" alt="">
+
+            <div>
+                <button onclick="sortCardsByViews()" class="btn btn-ghost bg-[#25252533] rounded-md text-[#252525] inter md:text-lg font-medium capitalize">Sort by view</button>
+            </div>
+            <div>
+                <button id="blog-btn" class="btn btn-secondary bg-[#FF1F3D] rounded-md text-white capitalize inter md:text-lg font-medium">Blog</button>
+            </div>
+        </div>
+
+        <hr class="mx-16 mt-8">
+    </header>
+
+    <main>
+        <!-- catagori button section  -->
+
+        <section>
+            <div id="button-container" class="flex justify-center gap-2 md:gap-8 mt-8">
+                
+            </div>
+        </section>
+
+        <!-- card section  -->
+
+        <section class="mt-10">
+          <!-- card container  -->
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
+               
+            </div>
+        </section>
+
+        <!-- empty card section  -->
+        <section>
+            <div id="empty-card-container">
+                
+            </div>
+        </section>
+
+        <!-- <button onclick=", loaddata()">click here</button> -->
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
